@@ -2,8 +2,7 @@ from config.database import ConexionDB
 from models.tarea import TareaSimple, TareaUrgente
 from dao.tarea_dao import TareaDAO
 
-
-if name == "main":
+if __name__ == "__main__":
     db = ConexionDB()
     db.inicializar_tablas()
     dao = TareaDAO(db)
