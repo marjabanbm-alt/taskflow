@@ -1,8 +1,8 @@
-from models.tarea import TareaSimple, TareaUrgente
+from modelos.tarea import TareaSimple, TareaUrgente
 
 
 class TareaDAO:
-    def init(self, conexion_db):
+    def __init__(self, conexion_db):
         self.db = conexion_db
 
     def crear(self, tarea):
